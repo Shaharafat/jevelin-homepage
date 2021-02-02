@@ -1,0 +1,14 @@
+// BACKGROUND IMAGE
+@mixin full-background-image($url) {
+  background: url($url) center center / cover;
+}
+
+// button
+@mixin button($bg: $indigo,$color:$bg-white,$pad: .7rem 2rem,$border: 1px solid $indigo, $radius: 9999rem){
+  background: $bg;
+  color: $color;
+  padding: $pad;
+  border-radius: $radius;
+  text-decoration: none;
+  border: $border;
+}

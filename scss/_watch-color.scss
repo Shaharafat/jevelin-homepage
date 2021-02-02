@@ -1,0 +1,23 @@
+.watch-color{
+  &__images{
+    &__box{
+      height: 350px;
+
+      &.one{
+        @include full-background-image('./images/color-1.jpg');
+      }
+
+      &.two{
+        @include full-background-image('./images/color-2.jpg');
+      }
+
+      &.three{
+        @include full-background-image('./images/color-3.jpg');
+      }
+    }
+  }
+
+  &__button{
+    @include button( $bg-footer,$bg-white, .8rem 2.5rem,2px solid $bg-white)
+  }
+}

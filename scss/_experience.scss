@@ -1,0 +1,33 @@
+.experience{
+  &__content{
+    &__details{
+      &__box{
+        &__progress{
+          &__bar{
+            height: 1px;
+            background: $bg-gray;
+            &__parcent{
+              height:5px;
+              background-color: $indigo;
+              border-radius: 5px;
+              position: relative;
+              top: -2.5px;
+
+              &.first{
+                width: 30%;
+              }
+
+              &.second{
+                width: 80%;
+              }
+
+              &.third{
+                width: 60%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

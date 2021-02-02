@@ -1,0 +1,14 @@
+.hero-section{
+  height: 92vh;
+
+  grid-template-areas: "hero-section-content"
+                       "hero-section-image";
+
+  &__content{
+    grid-area: hero-section-content;
+  }
+
+  &__image{
+    grid-area: hero-section-image;
+  }
+}

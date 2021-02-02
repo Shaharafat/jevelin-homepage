@@ -1,0 +1,80 @@
+// variables
+$bg-dark: #2b2b2b;
+$bg-gray: #f4f4f4;
+$bg-white: #ffffff;
+$bg-footer: #363636;
+$indigo: #7d1eff;
+$text-gray: #9d97a9;
+$text-light-gray: #999999;
+$text-light-gray-ultra: #dfd8d8;
+$text-white: #ffffff;
+$text-dark: #3f3849;
+$mint-green: #44d2ac;
+$purple-berry: #9247e0;
+$golden-sunset: #e29c47;
+$indigo-light: #bb89ff;
+
+.bg-dark {
+  background-color: $bg-dark;
+}
+
+.bg-gray {
+  background-color: $bg-gray;
+}
+
+.bg-white {
+  background-color: $bg-white;
+}
+
+.bg-footer {
+  background-color: $bg-footer;
+}
+
+.bg-indigo {
+  background-color: $indigo;
+}
+
+.text-indigo {
+  color: $indigo;
+}
+
+.text-gray {
+  color: $text-gray;
+}
+
+.text-light-gray {
+  color: $text-light-gray;
+}
+
+.text-lightest-gray {
+  color: $bg-gray;
+}
+
+.text-white {
+  color: $text-white;
+}
+
+.text-dark {
+  color: $text-dark;
+}
+
+.text-mint {
+  color: $mint-green;
+}
+
+.text-purple {
+  color: $purple-berry;
+}
+
+.text-golden {
+  color: $golden-sunset;
+}
+
+.text-indigo-light {
+  color: $indigo-light;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
