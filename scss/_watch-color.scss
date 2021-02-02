@@ -1,18 +1,26 @@
 .watch-color{
   &__images{
+    grid-template-areas: "one"
+                           "two"
+                           "three";
     &__box{
+      
+      // width: 100%;
       height: 350px;
 
       &.one{
         @include full-background-image('./images/color-1.jpg');
+        grid-area: one;
       }
 
       &.two{
         @include full-background-image('./images/color-2.jpg');
+        grid-area: two;
       }
 
       &.three{
         @include full-background-image('./images/color-3.jpg');
+        grid-area: three;
       }
     }
   }

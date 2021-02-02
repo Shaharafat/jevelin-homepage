@@ -1,0 +1,19 @@
+.features{
+  grid-template-areas: "features-image"
+                       "features-content";
+
+  &__image{
+    grid-area: features-image;
+  }
+
+  &__content{
+    grid-area: features-content;
+    &__details__box{
+      transition: transform .5s ease-in-out;
+
+      &:hover{
+        transform: translateX(40px);
+      }
+    }
+  }
+}

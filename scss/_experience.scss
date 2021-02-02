@@ -1,5 +1,12 @@
 .experience{
+  grid-template-areas: "experience-image"
+                       "experience-content";
+  &__image{
+    grid-area: experience-image;
+  }
+
   &__content{
+    grid-area: experience-content;
     &__details{
       &__box{
         &__progress{

@@ -1,0 +1,141 @@
+@media only screen and (min-width: 480px){
+  .container{
+    width: 85%;
+  }
+
+  .features,.experience{
+    padding: 15px;
+      &__image img{
+        padding: 0 15px;
+      }
+
+    &__content{
+      padding: 0 15px;
+    }
+  }
+
+  .design{
+    &__images{
+      .design__image--two{
+        display: block;
+      }
+    }
+  }
+
+  .quick-video, .watch-color,.testimonial,.footer{
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (min-width: 700px){
+  .design{
+    &__images{
+      .design__image--three{
+        display: block;
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width: 800px){
+  .container{
+    width: 70%;
+  }
+
+  .hero-section{
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: "hero-section-content hero-section-image";
+  }
+
+  .features{
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-areas: "features-image features-content";
+  }
+
+  .experience{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "experience-content experience-image";
+  }
+
+  .quick-video, .design{
+    &__title{
+      width: 60%;
+    }
+  }
+
+  .testimonial{
+    &__box__text{
+      width: 60%;
+    }
+  }
+
+  .watch-color{
+    &__images{
+      grid-template-areas: repeat(3,1fr);
+      grid-template-areas: "one two three";
+    }
+  }
+
+  .footer{
+    grid-template-columns: repeat(2fr,1fr,1fr);
+    grid-template-areas: "left center right";
+    grid-auto-flow: column;
+
+    &__center,&__right {
+      display: flex;
+      justify-content: center;
+      & ul li:first-child{
+        margin-top: 0;
+      }
+    }    
+  }
+}
+
+
+@media only screen and (min-width:880px){
+  .header{
+    &__center{
+      display: block;
+      &__nav{
+        position: static;
+        background: $bg-dark;
+        border: none;
+        right:auto;
+        top: auto;
+
+        &__list {
+          display: flex;
+          justify-content: center;
+
+          &__item {
+            margin: 0 1rem;
+            &__link {
+              display:inline;
+              border-bottom: none;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+    &__right {
+
+      &__hamburger {
+      display: none;
+      }
+
+      &__list {
+        &__item {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:1000px){
+  .footer{
+    grid-template-columns: repeat(3,1fr);
+  }
+}

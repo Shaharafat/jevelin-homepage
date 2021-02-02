@@ -1,14 +1,18 @@
-.hero-section{
-  height: 92vh;
+.hero-section-wrapper {
+  background: url("./images/ellipse.png") top -200px left -200px no-repeat, url("./images/ellipse.png") bottom -200px right -200px no-repeat, $bg-dark;
+ } 
+ .hero-section {
+    height: 92vh;
+    grid-template-areas:
+      "hero-section-content"
+      "hero-section-image";
 
-  grid-template-areas: "hero-section-content"
-                       "hero-section-image";
+    &__content {
+      grid-area: hero-section-content;
+    }
 
-  &__content{
-    grid-area: hero-section-content;
+    &__image {
+      grid-area: hero-section-image;
+    }
   }
 
-  &__image{
-    grid-area: hero-section-image;
-  }
-}
